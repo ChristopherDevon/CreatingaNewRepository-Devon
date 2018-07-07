@@ -6,7 +6,6 @@ int main(){
 	char input [101] = "";
 	char inputpass [101]="";
 	
-
 	do{	printf("Please enter your username\nUsername : ");
 	scanf("%[^\n]",input);getchar();
 	

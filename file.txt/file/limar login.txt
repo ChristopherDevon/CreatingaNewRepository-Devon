@@ -3,6 +3,7 @@ print request username and password
 read username and password
 	if username and password are correct see current  balance and calculations
 	
+print choose what to do
 
 print changes made to curent balance after addition
 	if addition was made
