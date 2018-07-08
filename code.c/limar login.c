@@ -13,17 +13,27 @@ int main(){
 	scanf("%[^\n]",inputpass);getchar();
 	}while (strcmp(input,username )!=0 || strcmp(inputpass,password)!=0 );
 	
-	
-	printf("Which one would you like to do ?");
 	float balance = 0;
-	printf("Balance : Rp.%.2f,\naddition \nsubtraction \nmultiplication \ndivision\nmodulus",&balance);
+	printf("Your current balance is : Rp.%.2f", &balance);
+
+	int op;
+	do{
+		printf("\nWhich one would you like to do ?");
+		printf("\n 1 : Addition \n 2 : Subtraction \n 3 : Multiplication \n 4 : Division \n 5 : Modulus \n Type the number of the operation : ");
+		scanf("%d", &op);
 	
-	float addition= 0;
-	printf("\nHow much money you want to add to your account ? \nAmount of Money :");
-	scanf("%f,",&addition);
+	}while
+		((op != 1) && (op != 2) && (op != 3) && (op != 4) && (op != 5));
+		
+
 	
-	float balance1 = balance + addition;
-	printf("\nYour new balance is : %.2f, ",balance1);
-	
+	if (op = 1)	
+	{	
+		printf ("How much money do you want to add to your account ? \nAmount of Money : ");
+		float addition = 0;
+		scanf ("%f",&addition);
+		float balance1 = balance + addition ; 
+		printf ("Your balance after addition is : Rp.%.2f",&balance1);
+	}
 	
 }
