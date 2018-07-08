@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include <math.h>
 
 int main(){
 	char username [101] = "Ahmad Sutojo";
@@ -14,7 +15,7 @@ int main(){
 	}while (strcmp(input,username )!=0 || strcmp(inputpass,password)!=0 );
 	
 	float balance = 0;
-	printf("Your current balance is : Rp.%.2f", &balance);
+	printf("Your current balance is : Rp.%f,", &balance);
 
 	int op;
 	do{
@@ -29,11 +30,35 @@ int main(){
 	
 	if (op = 1)	
 	{	
+		float addition ;
 		printf ("How much money do you want to add to your account ? \nAmount of Money : ");
-		float addition = 0;
-		scanf ("%f",&addition);
-		float balance1 = balance + addition ; 
-		printf ("Your balance after addition is : Rp.%.2f",&balance1);
+		scanf ("%f,", &addition);
+		balance = balance + addition ; 
+		printf ("Your balance after addition is : Rp.%.2f,\n",balance);
+	}
+	else if (op = 2)
+	{
+		float subtraction ;
+		printf ("How much money do you want to take from your account ? \nAmount of Money : ");
+		scanf ("%f",&subtraction);
+		balance = balance - subtraction; 
+		printf ("Your balance after addition is : Rp.%.2f\n",balance);
+	}
+	else if (op = 3)
+	{
+		float multiplication;  
+		printf ("How much money do you want to take from your account ? \nAmount of Money : ");
+		scanf ("%f",&multiplication);
+		balance = balance * multiplication;
+		printf ("Your balance after addition is : Rp.%.2f",balance);
+	}
+	else if (op = 4)
+	{
+		float division =0;
+		printf ("How much money do you want to take from your account ? \nAmount of Money : ");
+		scanf ("%f",&division);
+		balance = balance / division; 
+		printf ("Your balance after addition is : Rp.%.2f",balance);
 	}
 	
 }
