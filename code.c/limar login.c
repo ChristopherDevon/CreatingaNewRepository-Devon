@@ -27,38 +27,38 @@ int main(){
 		((op != 1) && (op != 2) && (op != 3) && (op != 4) && (op != 5));
 		
 
+	float value;
 	
 	if (op = 1)	
-	{	
-		float addition ;
-		printf ("How much money do you want to add to your account ? \nAmount of Money : ");
-		scanf ("%f,", &addition);
-		balance = balance + addition ; 
+	{	printf ("How much money do you want to add to your account ? \nAmount of Money : ");
+		scanf ("%f,", &value);
+		balance = balance + value ; 
 		printf ("Your balance after addition is : Rp.%.2f,\n",balance);
 	}
 	else if (op = 2)
 	{
-		float subtraction ;
 		printf ("How much money do you want to take from your account ? \nAmount of Money : ");
-		scanf ("%f",&subtraction);
-		balance = balance - subtraction; 
+		scanf ("%f",&value);
+		balance = balance - value; 
 		printf ("Your balance after addition is : Rp.%.2f\n",balance);
 	}
 	else if (op = 3)
 	{
-		float multiplication;  
-		printf ("How much money do you want to take from your account ? \nAmount of Money : ");
-		scanf ("%f",&multiplication);
-		balance = balance * multiplication;
-		printf ("Your balance after addition is : Rp.%.2f",balance);
+		printf ("How much money do you want to multiply from your account ? \nAmount of Money : ");
+		scanf ("%f",&value);
+		balance = balance * value;
+		printf ("Your balance after addition is : Rp.%.2f\n",balance);
 	}
 	else if (op = 4)
 	{
-		float division =0;
-		printf ("How much money do you want to take from your account ? \nAmount of Money : ");
-		scanf ("%f",&division);
-		balance = balance / division; 
-		printf ("Your balance after addition is : Rp.%.2f",balance);
+		printf ("How much money do you want to divide from your account ? \nAmount of Money : ");
+		scanf ("%f",&value);
+		balance = balance / value; 
+		printf ("Your balance after addition is : Rp.%.2f\n",balance);
 	}
-	
+	else if (op = 5)
+	{
+		printf("what value ? \n");
+		scandf("%f",)
+	}
 }
