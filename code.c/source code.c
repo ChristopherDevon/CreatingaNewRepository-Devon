@@ -20,7 +20,7 @@ int main(){
 	int op;
 	do{
 		
-	}do{
+	do{
 		printf("\nWhich one would you like to do ?");
 		printf("\n 1 : Addition \n 2 : Subtraction \n 3 : Multiplication \n 4 : Division \n 5 : Modulus \n 6 : exit\n\n Type the number of the operation : ");
 		scanf("%d", &op);getchar();
